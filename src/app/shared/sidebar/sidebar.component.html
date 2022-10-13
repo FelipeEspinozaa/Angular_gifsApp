@@ -9,7 +9,8 @@
           <a  *ngFor="let busqueda of historial" 
             href="#"
             class="list-group-item list-group-item-action">
-            {{ busqueda }}
+            <!-- Este pipe se encarga de capitalizar, a pesar que tengamos guardado en minuscula nuestros datos -->
+            {{ busqueda | titlecase }}
           </a>
     </div>
 </div>
